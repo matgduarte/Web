@@ -15,26 +15,54 @@ body {
 
 /*header*/
 
-header{
+header {
     height: 100px;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
 }
 
-#menu{
+#menu {
     list-style: none;
+}
+
+#busca {
+    width: 530px;
+    height: 40px;
+    border-radius: 100px;
+    background: #FFF;
+}
+
+#busca input{
+    width: 490px;
+    height: 40px;
+    border: none;
+    border-radius: 100px;
+}
+
+#iconBusca{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #740303;
 }
 
 /*main*/
 
-#divMain{
+#divMain {
     width: 1200px;
     margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 44px;
 }
 
-#bannerPc{
-width: 100%;
+#bannerPc {
+    width: 100%;
+}
+
+#bannerMobile {
+    display: none;
 }
 
 .container {
@@ -43,34 +71,76 @@ width: 100%;
     width: 100%;
     height: 358px;
     padding: 15px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .box {
     width: 220px;
     height: 328px;
     border-radius: 20px;
+    background-color: aqua;
 }
 
-#containerMeio{
+.boxInterna {
+    width: 210px;
+    height: 308px;
+    margin: 10px 5px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item {
+    width: 160px;
+    margin-top: 15px;
+}
+
+.detalhe {
+    color: #FFF;
+    border-radius: 100px;
+    background: #740303;
+    width: 210px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: -30px;
+}
+
+.informacoes {
+    width: 210px;
+}
+
+.estrela {}
+
+.descricao {}
+
+.preco {}
+
+#containerMeio {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin: 40px 0;
 }
 
-#banner1{
-}
+#banner1 {}
 
-#banner2{
-}
+#banner2 {}
 
 /*footer*/
 
-footer{
+footer {
     width: 100%;
+    height: 100px;
+    padding-top: 41px;
+    display: flex;
+    justify-content: center;
 }
 
-#logoFooter{
-    margin: 0 auto;
+footer div {}
+
+#logoFooter {
+    margin: auto;
 }
 
 #direitos {
