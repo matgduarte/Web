@@ -6,6 +6,8 @@
     box-sizing: border-box;
     text-decoration: none;
     outline: none;
+    font-family: "Inter", sans-serif;
+    transition: 0.2s linear;
 }
 
 body {
@@ -17,13 +19,30 @@ body {
 
 header {
     height: 100px;
+   position: fixed;
+   background-color: #F6F6F6;
+   width: 100vw;
+}
+
+#divHeader {
+    width: 1300px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 100px;
 }
 
 #menu {
     list-style: none;
+}
+
+.link {
+    color: #202020;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 #busca {
@@ -31,24 +50,98 @@ header {
     height: 40px;
     border-radius: 100px;
     background: #FFF;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
 }
 
-#busca input{
-    width: 490px;
-    height: 40px;
+#busca input {
+    width: 475px;
+    height: 15px;
     border: none;
-    border-radius: 100px;
+    color: #202020;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 15px;
 }
 
-#iconBusca{
-    display: inline-block;
+#linkBusca{
+    border-radius: 100%;
+}
+
+#iconBusca {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: #740303;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 10px 15px rgba(232, 81, 40, 0.30));
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+#boxHeader {
+    height: 40px;
+    width: 194px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aCarrinho {
+    border-radius: 100%;
+}
+
+#carrinho {
     width: 40px;
     height: 40px;
     border-radius: 100%;
-    background-color: #740303;
+    background-color: rgba(116, 3, 3, 0.10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#carrinho img {
+    color: #740303;
+}
+
+#linkAvatar{
+    border-radius: 100%;
+}
+
+#texto{
+    width: 85px;
+}
+
+#nome {
+    height: 15px;
+    color: #202020;
+    font-size: 12px;
+    font-style:normal;
+    font-weight: 600;
+    line-height:normal;
+}
+
+#pedidos {
+    height: 15px;
+    color: rgba(32, 32, 32, 0.6);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 /*main*/
+
+#atrasHeader{
+    height: 100px;
+}
 
 #divMain {
     width: 1200px;
@@ -75,20 +168,33 @@ header {
     justify-content: space-between;
 }
 
-.box {
+.boxImg {
     width: 220px;
     height: 328px;
     border-radius: 20px;
-    background-color: aqua;
+}
+
+.box {
+    width: 230px;
+    height: 328px;
+    border-radius: 20px;
+}
+
+.box:hover {
+    background-color: rgba(116, 3, 3, 0.10);
 }
 
 .boxInterna {
     width: 210px;
     height: 308px;
-    margin: 10px 5px;
+    margin: 10px 10px;
+}
+
+.boxItem {
+    height: 210px;
+    width: 210px;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 .item {
@@ -102,19 +208,62 @@ header {
     background: #740303;
     width: 210px;
     height: 40px;
-    margin: 0 auto;
-    margin-top: -30px;
+    margin-top: -40px;
+    position: relative;
+    z-index: 100;
+    display: none;
+}
+
+.box:hover .detalhe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .informacoes {
     width: 210px;
 }
 
-.estrela {}
+.estrela {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
 
-.descricao {}
+.paragrafos {
+    width: 150px;
+    display: inline-block;
+}
 
-.preco {}
+.descricao {
+    color: #202020;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 150px;
+    height: 30px;
+}
+
+.preco {
+    margin: 10px 0;
+    color: #202020;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.carrinho {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: rgba(116, 3, 3, 0.10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    margin-top: 15px;
+}
 
 #containerMeio {
     width: 100%;
@@ -133,21 +282,30 @@ footer {
     width: 100%;
     height: 100px;
     padding-top: 41px;
+}
+
+#boxFooter1 {
+    width: 100vw;
     display: flex;
     justify-content: center;
 }
-
-footer div {}
 
 #logoFooter {
     margin: auto;
 }
 
+#boxFooter2 {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
 #direitos {
-    color: #202020;
+    color: rgba(32, 32, 32, 0.6);
     text-align: center;
-    font-family: Inter;
     font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
     line-height: 20px;
-    opacity: 0.6000000238418579;
+    /* 200% */
 }

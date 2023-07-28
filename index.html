@@ -5,33 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/icones/icon-navegador.svg" type="image/x-icon">
     <title>We.lol</title>
 </head>
 
 <body>
     <header>
-        <img class="logo" src="img/icones/logo.svg" alt="">
-        <ul id="menu">
-            <li>Champions</li>
-            <li>Como comprar</li>
-        </ul>
-        <div id="busca">
-            <input type="text">
-            <div id="iconBusca">
-            <img src="img/icones/icone-busca.svg" alt="">
-        </div>
+        <div id="divHeader">
+            <img class="logo" src="img/icones/logo.svg" alt="">
+            <ul id="menu">
+                <li><a href="#" class="link">Champions</a></li>
+                <li><a href="#" class="link">Como comprar</a></li>
+            </ul>
+            <div id="busca">
+                <input type="text">
+                <a href="#" id="linkBusca">
+                    <div id="iconBusca">
+                        <img src="img/icones/icone-busca.svg" alt="">
+                    </div>
+                </a>
+            </div>
+            <div id="boxHeader">
+                <a class="aCarrinho" href="#">
+                    <div id="carrinho">
+                        <img src="img/icones/icon-carrinho2.svg" alt="">
+                    </div>
+                </a>
+                <a href="#" id="linkAvatar">
+                    <img id="avatar" src="img/icones/icone-invocador.png" alt="">
+                </a>
+                <div id="texto">
+                    <a href="#" id="nome">Olá invocador!</a>
+                    <a href="#" id="pedidos">Meus pedidos</a>
+                </div>
+            </div>
         </div>
     </header>
     <main>
-        <img id="bannerPc" src="img/banner-ad-carry.png" alt="">
-        <img id="bannerMobile" src="img/banner- principal-mobile.png" alt="">
-        <div id="divMain">
+        <div id="atrasHeader"></div>
+        <section>
+            <img id="bannerPc" src="img/banner-ad-carry.png" alt="">
+            <img id="bannerMobile" src="img/banner- principal-mobile.png" alt="">
+        </section>
+        <section id="divMain">
             <div class="container">
-                <img class="box" src="img/banner-vitrine.jpg" alt="">
+                <img class="boxImg" src="img/banner-vitrine.jpg" alt="">
                 <div class="box">
                     <div class="boxInterna">
-                        <img class="item" src="/img/tristana.png" alt="">
-                        <a class="detalhe">Ver detalhes</a>
+                        <div class="boxItem">
+                            <img class="item" src="/img/tristana.png" alt="">
+                        </div>
+                        <a href="#" class="detalhe">Ver detalhes</a>
                         <div class="informacoes">
                             <div>
                                 <img class="estrela" src="/img/icones/star.svg" alt="">
@@ -40,33 +64,217 @@
                                 <img class="estrela" src="/img/icones/star (1).svg" alt="">
                                 <img class="estrela" src="/img/icones/star (1).svg" alt="">
                             </div>
-                            <p class="descricao">Mis Fortune Fliperama Tiro fofo</p>
-                            <p class="preco">R$ 1,00</p>
+                            <div class="paragrafos">
+                                <p class="descricao">Mis Fortune Fliperama Tiro fofo</p>
+                                <p class="preco">R$ 1,00</p>
+                            </div>
+                            <a class="aCarrinho" href="#">
+                                <div class="carrinho">
+                                    <img src="img/icones/icon-carrinho.svg" alt="">
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
+                <div class="box">
+                    <div class="boxInterna">
+                        <div class="boxItem">
+                            <img class="item" src="/img/miss-fortune.png" alt="">
+                        </div>
+                        <a href="#" class="detalhe">Ver detalhes</a>
+                        <div class="informacoes">
+                            <div>
+                                <img class="estrela" src="/img/icones/star.svg" alt="">
+                                <img class="estrela" src="/img/icones/star.svg" alt="">
+                                <img class="estrela" src="/img/icones/star.svg" alt="">
+                                <img class="estrela" src="/img/icones/star.svg" alt="">
+                                <img class="estrela" src="/img/icones/star (1).svg" alt="">
+                            </div>
+                            <div class="paragrafos">
+                                <p class="descricao">Tristana do mal</p>
+                                <p class="preco">R$ 1,00</p>
+                            </div>
+                            <a class="aCarrinho" href="#">
+                                <div class="carrinho">
+                                    <img src="img/icones/icon-carrinho.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="boxInterna">
+                        <div class="boxItem">
+                            <img class="item" src="/img/vayne.png" alt="">
+                        </div>
+                        <a href="#" class="detalhe">Ver detalhes</a>
+                        <div class="informacoes">
+                            <div>
+                                <img class="estrela" src="/img/icones/star.svg" alt="">
+                                <img class="estrela" src="/img/icones/star.svg" alt="">
+                                <img class="estrela" src="/img/icones/star.svg" alt="">
+                                <img class="estrela" src="/img/icones/star (1).svg" alt="">
+                                <img class="estrela" src="/img/icones/star (1).svg" alt="">
+                            </div>
+                            <div class="paragrafos">
+                                <p class="descricao">Vayne morgeco de batalha</p>
+                                <p class="preco">R$ 1,00</p>
+                            </div>
+                            <a class="aCarrinho" href="#">
+                                <div class="carrinho">
+                                    <img src="img/icones/icon-carrinho.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="boxInterna">
+                        <div class="boxItem">
+                            <img class="item" src="/img/varus.png" alt="">
+                        </div>
+                        <a href="#" class="detalhe">Ver detalhes</a>
+                        <div class="informacoes">
+                            <div>
+                                <img class="estrela" src="/img/icones/star.svg" alt="">
+                                <img class="estrela" src="/img/icones/star.svg" alt="">
+                                <img class="estrela" src="/img/icones/star.svg" alt="">
+                                <img class="estrela" src="/img/icones/star (1).svg" alt="">
+                                <img class="estrela" src="/img/icones/star (1).svg" alt="">
+                            </div>
+                            <div class="paragrafos">
+                                <p class="descricao">Varus caçador cósmico - Flechada</p>
+                                <p class="preco">R$ 1,00</p>
+                            </div>
+                            <a class="aCarrinho" href="#">
+                                <div class="carrinho">
+                                    <img src="img/icones/icon-carrinho.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="containerMeio">
                 <img id="banner1" src="img/banner-vayne.png" alt="">
                 <img id="banner2" src="img/banner-draven.png" alt="">
             </div>
             <div class="container">
-                <img class="box" src="img/banner-vitrine.jpg" alt="">
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
+                <img class="boxImg" src="img/banner-vitrine.jpg" alt="">
+                <div class="box">
+                    <div class="boxInterna">
+                        <div class="boxItem">
+                            <img class="item" src="/img/tristana.png" alt="">
+                        </div>
+                        <a href="#" class="detalhe">Ver detalhes</a>
+                        <div class="informacoes">
+                            <div>
+                                <img class="estrela" src="/img/icones/star.svg" alt="">
+                                <img class="estrela" src="/img/icones/star.svg" alt="">
+                                <img class="estrela" src="/img/icones/star.svg" alt="">
+                                <img class="estrela" src="/img/icones/star (1).svg" alt="">
+                                <img class="estrela" src="/img/icones/star (1).svg" alt="">
+                            </div>
+                            <div class="paragrafos">
+                                <p class="descricao">Mis Fortune Fliperama Tiro fofo</p>
+                                <p class="preco">R$ 1,00</p>
+                            </div>
+                            <a class="aCarrinho" href="#">
+                                <div class="carrinho">
+                                    <img src="img/icones/icon-carrinho.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="boxInterna">
+                        <div class="boxItem">
+                            <img class="item" src="/img/miss-fortune.png" alt="">
+                        </div>
+                        <a href="#" class="detalhe">Ver detalhes</a>
+                        <div class="informacoes">
+                            <div>
+                                <img class="estrela" src="/img/icones/star.svg" alt="">
+                                <img class="estrela" src="/img/icones/star.svg" alt="">
+                                <img class="estrela" src="/img/icones/star.svg" alt="">
+                                <img class="estrela" src="/img/icones/star.svg" alt="">
+                                <img class="estrela" src="/img/icones/star (1).svg" alt="">
+                            </div>
+                            <div class="paragrafos">
+                                <p class="descricao">Tristana do mal</p>
+                                <p class="preco">R$ 1,00</p>
+                            </div>
+                            <a class="aCarrinho" href="#">
+                                <div class="carrinho">
+                                    <img src="img/icones/icon-carrinho.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="boxInterna">
+                        <div class="boxItem">
+                            <img class="item" src="/img/vayne.png" alt="">
+                        </div>
+                        <a href="#" class="detalhe">Ver detalhes</a>
+                        <div class="informacoes">
+                            <div>
+                                <img class="estrela" src="/img/icones/star.svg" alt="">
+                                <img class="estrela" src="/img/icones/star.svg" alt="">
+                                <img class="estrela" src="/img/icones/star.svg" alt="">
+                                <img class="estrela" src="/img/icones/star (1).svg" alt="">
+                                <img class="estrela" src="/img/icones/star (1).svg" alt="">
+                            </div>
+                            <div class="paragrafos">
+                                <p class="descricao">Vayne morgeco de batalha</p>
+                                <p class="preco">R$ 1,00</p>
+                            </div>
+                            <a class="aCarrinho" href="#">
+                                <div class="carrinho">
+                                    <img src="img/icones/icon-carrinho.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="boxInterna">
+                        <div class="boxItem">
+                            <img class="item" src="/img/varus.png" alt="">
+                        </div>
+                        <a href="#" class="detalhe">Ver detalhes</a>
+                        <div class="informacoes">
+                            <div>
+                                <img class="estrela" src="/img/icones/star.svg" alt="">
+                                <img class="estrela" src="/img/icones/star.svg" alt="">
+                                <img class="estrela" src="/img/icones/star.svg" alt="">
+                                <img class="estrela" src="/img/icones/star (1).svg" alt="">
+                                <img class="estrela" src="/img/icones/star (1).svg" alt="">
+                            </div>
+                            <div class="paragrafos">
+                                <p class="descricao">Varus caçador cósmico - Flechada</p>
+                                <p class="preco">R$ 1,00</p>
+                            </div>
+                            <a class="aCarrinho" href="#">
+                                <div class="carrinho">
+                                    <img src="img/icones/icon-carrinho.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
     </main>
     <footer>
-        <div>
+        <div id="boxFooter1">
             <img id="logoFooter" src="img/icones/logo.svg" alt="">
         </div>
-        <p id="direitos">Todos os direitos reservados. 2023</p>
+        <div id="boxFooter2">
+            <p id="direitos">Todos os direitos reservados. 2023</p>
+        </div>
     </footer>
 </body>
 
