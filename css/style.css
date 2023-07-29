@@ -10,18 +10,25 @@
     transition: 0.2s linear;
 }
 
+html::-webkit-scrollbar {
+    overflow-y: hidden;
+    display: none;
+}
+
 body {
     background: #F6F6F6;
     overflow-x: hidden;
 }
 
+
 /*header*/
 
 header {
     height: 100px;
-   position: fixed;
-   background-color: #F6F6F6;
-   width: 100vw;
+    position: fixed;
+    background-color: #F6F6F6;
+    width: 100vw;
+    z-index: 1;
 }
 
 #divHeader {
@@ -33,13 +40,14 @@ header {
     height: 100px;
 }
 
-#menu {
+#menuMobile {
     list-style: none;
+    display: none;
 }
 
 .link {
     color: #202020;
-    font-size: 12px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -51,7 +59,7 @@ header {
     border-radius: 100px;
     background: #FFF;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -60,15 +68,16 @@ header {
     height: 15px;
     border: none;
     color: #202020;
-    font-size: 12px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     margin-left: 15px;
 }
 
-#linkBusca{
+#linkBusca {
     border-radius: 100%;
+    margin-right: 5px;
 }
 
 #iconBusca {
@@ -79,10 +88,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    filter: drop-shadow(0px 10px 15px rgba(232, 81, 40, 0.30));
-    width: 30px;
-    height: 30px;
-    margin-right: 5px;
+    filter: drop-shadow(0px 15px 10px rgba(232, 81, 40, 0.3));
 }
 
 #boxHeader {
@@ -111,27 +117,31 @@ header {
     color: #740303;
 }
 
-#linkAvatar{
+#linkAvatar {
     border-radius: 100%;
 }
 
-#texto{
-    width: 85px;
+#avatar {
+    display: flex;
+}
+
+#texto {
+    max-width: 95px;
 }
 
 #nome {
     height: 15px;
     color: #202020;
-    font-size: 12px;
-    font-style:normal;
+    font-size: 13px;
+    font-style: normal;
     font-weight: 600;
-    line-height:normal;
+    line-height: normal;
 }
 
 #pedidos {
     height: 15px;
     color: rgba(32, 32, 32, 0.6);
-    font-size: 12px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -139,7 +149,7 @@ header {
 
 /*main*/
 
-#atrasHeader{
+#atrasHeader {
     height: 100px;
 }
 
@@ -151,7 +161,7 @@ header {
 }
 
 #bannerPc {
-    width: 100%;
+    width: 100vw;
 }
 
 #bannerMobile {
@@ -210,7 +220,6 @@ header {
     height: 40px;
     margin-top: -40px;
     position: relative;
-    z-index: 100;
     display: none;
 }
 
@@ -236,7 +245,7 @@ header {
 
 .descricao {
     color: #202020;
-    font-size: 12px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -247,7 +256,7 @@ header {
 .preco {
     margin: 10px 0;
     color: #202020;
-    font-size: 12px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -272,14 +281,10 @@ header {
     margin: 40px 0;
 }
 
-#banner1 {}
-
-#banner2 {}
-
 /*footer*/
 
 footer {
-    width: 100%;
+    width: 100vw;
     height: 100px;
     padding-top: 41px;
 }
@@ -303,9 +308,31 @@ footer {
 #direitos {
     color: rgba(32, 32, 32, 0.6);
     text-align: center;
-    font-size: 10px;
+    font-size: 11px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
     /* 200% */
+}
+
+/*media*/
+
+@media (max-width: 360px) {
+
+    /*header*/
+
+    .linkPC {
+        display: none;
+    }
+
+    #menuMobile {
+        display: block;
+    }
+
+    /*main*/
+
+    #bannerMobile{
+        display: block;
+    }
+
 }
