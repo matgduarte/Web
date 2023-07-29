@@ -29,10 +29,11 @@ header {
     background-color: #F6F6F6;
     width: 100vw;
     z-index: 1;
+    filter: drop-shadow(0px 0px 10px rgba(232, 81, 40, 0.3));
 }
 
 #divHeader {
-    width: 1300px;
+    max-width: 1300px;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
@@ -43,6 +44,28 @@ header {
 #menuMobile {
     list-style: none;
     display: none;
+    width: 160px;
+    height: 200px;
+    background-color: #740303;
+}
+
+.linkMobile {
+
+}
+
+#menu{
+    display: none;
+}
+/*
+#menuGrande{
+    display: none;
+}
+*/
+#menuGrande:hover{
+    background-color: aqua;
+}
+#menuGrande:hover #menuMobile {
+    display: block;
 }
 
 .link {
@@ -89,6 +112,10 @@ header {
     justify-content: center;
     align-items: center;
     filter: drop-shadow(0px 15px 10px rgba(232, 81, 40, 0.3));
+}
+
+#linkBuscaMobile {
+    display: none;
 }
 
 #boxHeader {
@@ -153,32 +180,51 @@ header {
     height: 100px;
 }
 
+#divBanner {
+    width: 100vw;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#bannerPc {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#bannerMobile {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 #divMain {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     margin-top: 40px;
     margin-bottom: 44px;
 }
 
-#bannerPc {
-    width: 100vw;
-}
-
-#bannerMobile {
-    display: none;
-}
-
 .container {
     border-radius: 20px;
     background: #FFF;
-    width: 100%;
-    height: 358px;
+    width: auto;
     padding: 15px;
     display: flex;
-    justify-content: space-between;
+    justify-content:baseline;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.boxImg {
+.boxImgMobile {
+    display: none;
+}
+
+.boxImgPc {
     width: 220px;
     height: 328px;
     border-radius: 20px;
@@ -188,6 +234,7 @@ header {
     width: 230px;
     height: 328px;
     border-radius: 20px;
+    margin-left: 7.5px;
 }
 
 .box:hover {
@@ -221,6 +268,11 @@ header {
     margin-top: -40px;
     position: relative;
     display: none;
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 
 .box:hover .detalhe {
@@ -281,6 +333,15 @@ header {
     margin: 40px 0;
 }
 
+.bannerPcMeio {
+    max-width: 50%;
+}
+
+.bannerMobileMeio {
+    display: none;
+    width: 100vw;
+}
+
 /*footer*/
 
 footer {
@@ -317,22 +378,359 @@ footer {
 
 /*media*/
 
-@media (max-width: 360px) {
+@media (max-width: 1200px) {
+
+    #divMain {
+        max-width: 962.5px;
+    }
+}
+
+@media (max-width: 1000px) {
 
     /*header*/
 
-    .linkPC {
+    header {
+        height: 100px;
+    }
+
+    #divHeader {
+        width: calc(100vw - 40px);
+        height: 100px;
+        justify-content: space-between;
+        margin: 0 10px;
+    }
+
+    #menuButton{
+        width: 160px;
+    }
+
+    .linkPc {
         display: none;
     }
 
-    #menuMobile {
+    #menuPc {
+        display: none;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #menuGrande {
+        margin-left: 16.5px;
         display: block;
+    }
+
+    #menuGrande:hover #menuMobile {
+        display: block;
+        background-color: #740303;
+    }
+
+    #boxHeader {
+        height: 40px;
+        width: 160px;
+    }
+
+    #carrinho {
+        width: 40px;
+        height: 40px;
+    }
+
+    #avatar {
+        width: 40px;
+        height: 40px;
+    }
+
+    #busca {
+        display: none;
+    }
+
+    #linkBuscaMobile {
+        display: inline;
+        border-radius: 100%;
+        width: 40px;
+        height: 40px;
+    }
+
+    #iconBuscaMobile {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        background-color: #740303;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    #texto {
+        display: none;
     }
 
     /*main*/
 
-    #bannerMobile{
+    #divMain {
+        width: 100vw;
+    }
+
+    .container {
+        border-radius: 20px;
+    }
+
+    #containerMeio {
+        margin: 40px 0;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 962.5px){
+    #divMain {
+        max-width: 725px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    #divBanner {
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 725px){
+    #divMain {
+        max-width: 510px;
+    }
+}
+
+@media (max-width: 680px) {
+
+    #divBanner {
+        max-height: 200px;
+    }
+
+}
+
+@media (max-width: 510px) {
+
+    /*header*/
+
+    header {
+        height: 40px;
+    }
+
+    #divHeader {
+        width: calc(100vw - 20px);
+        height: 40px;
+        justify-content: space-between;
+        margin: 0 10px;
+    }
+
+    .linkPc {
+        display: none;
+    }
+
+    #menuPc {
+        display: none;
+    }
+
+    #menu {
         display: block;
+    }
+
+    #menuGrande {
+        display: none;
+    }
+
+    #menuButton{
+        width: 76px;
+    }
+
+    #menu:hover #menuMobile {
+        display: block;
+    }
+
+    #boxHeader {
+        height: 20px;
+        width: 76px;
+    }
+
+    #carrinho {
+        width: 20px;
+        height: 20px;
+    }
+
+    #avatar {
+        width: 20px;
+        height: 20px;
+    }
+
+    #busca {
+        display: none;
+    }
+
+    #linkBuscaMobile {
+        width: 20px;
+        height: 20px;
+    }
+
+    #iconBuscaMobile {
+        width: 20px;
+        height: 20px;
+    }
+
+    #iconBuscaMobile img {
+        width: 8px;
+    }
+
+    #texto {
+        display: none;
+    }
+
+    /*main*/
+
+    #atrasHeader {
+        height: 40px;
+    }
+
+    #divMain {
+        max-width: 1200px;
+    }
+
+    .container {
+        overflow: scroll;
+        justify-content:space-between;
+        flex-wrap: nowrap;
+    }
+
+    #containerMeio {
+        margin: 40px 0 30px 0;
+        flex-wrap: wrap;
+    }
+
+    .bannerPcMeio {
+        max-width: 100vw;
+    }
+
+    .bannerPcMeio:first-child {
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 450px) {
+
+    #divBanner {
+        max-height: 100px;
+    }
+}
+
+@media (max-width: 360px) {
+
+    /*main*/
+
+    #divBanner {
+        max-height: 286px;
+    }
+
+    #bannerPc {
+        display: none;
+    }
+
+    #bannerMobile {
+        display: block;
+    }
+
+    .container {
+        height: 284px;
+        padding: 10px;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .boxImgPc {
+        display: none;
+    }
+
+    .boxImgMobile {
+        display: block;
+        width: 100vw;
+    }
+
+    .box {
+        width: 170px;
+        height: 264px;
+        background-color: rgba(116, 3, 3, 0.10);
+    }
+
+    .box:first-of-type{
+        margin-left: 0;
+    }
+
+    .boxInterna {
+        width: 150px;
+        height: 244px;
+    }
+
+    .boxItem {
+        height: 150px;
+        width: 150px;
+    }
+
+    .item {
+        width: 120px;
+        margin-top: 11px;
+    }
+
+    .detalhe {
+        width: 150px;
+        height: 35px;
+        margin-top: -35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 11px;
+    }
+
+    .informacoes {
+        width: 150px;
+    }
+
+    .estrela {
+        margin-top: 14px;
+    }
+
+    .paragrafos {
+        width: 123px;
+    }
+
+    .descricao {
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 123px;
+    }
+
+    .preco {
+        margin: 14px 0 10px 0;
+        font-size: 11px;
+    }
+
+    .carrinho {
+        width: 25px;
+        height: 25px;
+        margin-top: 31px;
+    }
+
+    .bannerPcMeio {
+        display: none;
+    }
+
+    .bannerMobileMeio {
+        display: block;
+    }
+
+    .bannerMobileMeio {
+        margin-bottom: 10px;
     }
 
 }

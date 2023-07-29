@@ -12,13 +12,17 @@
 <body>
     <header>
         <div id="divHeader">
-            <img class="logo" src="img/icones/logo.svg" alt="">
-                <a href="#" class="link linkPc">Champions</a>
-                <a href="#" class="link linkPc">Como comprar</a>
+            <div id="menuButton">
+                <img id="menu" class="menu" src="img/icones/icone-menu.svg" alt="">
+                <img id="menuGrande" class="menu" src="img/icones/icon-menu-grande.svg" alt="">
+            </div>
             <ul id="menuMobile">
                 <li><a href="#" class="link">Champions</a></li>
                 <li><a href="#" class="link">Como comprar</a></li>
             </ul>
+            <img class="logo" src="img/icones/logo.svg" alt="">
+            <a href="#" class="link linkPc">Champions</a>
+            <a href="#" class="link linkPc">Como comprar</a>
             <div id="busca">
                 <input type="text" placeholder="Pesquise aqui um produto">
                 <a href="#" id="linkBusca">
@@ -28,6 +32,11 @@
                 </a>
             </div>
             <div id="boxHeader">
+                <a href="#" id="linkBuscaMobile">
+                    <div id="iconBuscaMobile">
+                        <img src="img/icones/icone-busca.svg" alt="">
+                    </div>
+                </a>
                 <a class="aCarrinho" href="#">
                     <div id="carrinho">
                         <img src="img/icones/icon-carrinho2.svg" alt="">
@@ -45,13 +54,14 @@
     </header>
     <main>
         <div id="atrasHeader"></div>
-        <section>
+        <section id="divBanner">
             <img id="bannerPc" src="img/banner-ad-carry.png" alt="">
             <img id="bannerMobile" src="img/banner- principal-mobile.png" alt="">
         </section>
         <section id="divMain">
+            <img class="boxImgMobile" src="img/banner-vitrine-mobile.png" alt="">
             <div class="container">
-                <img class="boxImg" src="img/banner-vitrine.jpg" alt="">
+                <img class="boxImgPc" src="img/banner-vitrine.jpg" alt="">
                 <div class="box">
                     <div class="boxInterna">
                         <div class="boxItem">
@@ -158,11 +168,14 @@
                 </div>
             </div>
             <div id="containerMeio">
-                <img id="banner1" src="img/banner-vayne.png" alt="">
-                <img id="banner2" src="img/banner-draven.png" alt="">
+                <img class="bannerPcMeio" src="img/banner-vayne.png" alt="">
+                <img class="bannerPcMeio" src="img/banner-draven.png" alt="">
+                <img class="bannerMobileMeio" src="img/banner-vayne-mobile.png" alt="">
+                <img class="bannerMobileMeio" src="img/banner-draven-mobile.png" alt="">
             </div>
+            <img class="boxImgMobile" src="img/banner-vitrine-mobile.png" alt="">
             <div class="container">
-                <img class="boxImg" src="img/banner-vitrine.jpg" alt="">
+                <img class="boxImgPc" src="img/banner-vitrine.jpg" alt="">
                 <div class="box">
                     <div class="boxInterna">
                         <div class="boxItem">
